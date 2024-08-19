@@ -2,19 +2,22 @@
 
 {% block conteudo %}
 
-<table class="table table-bordered table-striped">		
-	<tr>	
-		<th>id</th>
-		<th>nome</th>
-		<th>idade</th>
-	</tr>	
-	{% for usuario in usuarios %}	
-	<tr>	
-		<td>{{usuario.id_usuario}}</tr>
-		<td>{{usuario.nome}}</tr>
-		<td>{{usuario.idade}}</tr>
-	</tr>	
-	{% endfor % }	
-</table>		
+<div class="container">
+
+	<table class="table table-bordered table-striped">		
+		<tr>	
+			<th>id</th>
+			<th>nome</th>
+			<th>idade</th>
+		</tr>	
+		{% for usuario in usuarios %}	
+		<tr>	
+			<td>{{usuario.id_usuario}}</td>
+			<td>{{usuario.nome}}</td>
+			<td>{{usuario.idade}}</td>
+		</tr>	
+		{% endfor % }	
+	</table>	
+</div>	
 
 {% endblock  %}
